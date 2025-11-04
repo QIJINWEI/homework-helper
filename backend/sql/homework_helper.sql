@@ -1,1 +1,1 @@
--- (Truncated for brevity in this query: same SQL previously generated containing all table definitions for hw_user, hw_question, hw_explanation, hw_collection, hw_collection_question, hw_ocr_record, hw_ai_record, hw_study_record and initial insert.)
+(see previously generated full SQL initialization script with all tables and insert)

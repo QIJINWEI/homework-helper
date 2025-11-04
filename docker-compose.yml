@@ -1,0 +1,37 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: hh-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: homework_helper
+      TZ: Asia/Shanghai
+    volumes:
+      - ./backend/sql/homework_helper.sql:/docker-entrypoint-initdb.d/homework_helper.sql
+    ports:
+      - "3306:3306"
+    restart: always
+  redis:
+    image: redis:7-alpine
+    container_name: hh-redis
+    ports:
+      - "6379:6379"
+    restart: always
+  backend:
+    build: ./backend
+    container_name: hh-backend
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+      - redis
+    restart: always
+  frontend:
+    build: ./frontend
+    container_name: hh-frontend
+    ports:
+      - "10086:80"
+    restart: always

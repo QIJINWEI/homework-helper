@@ -5,7 +5,7 @@ import './app.scss'
 
 function App({ children }: PropsWithChildren<any>) {
   useLaunch(() => {
-    console.log('App launched.')</strong>
+    console.log('App launched.')
   })
   return children
 }
