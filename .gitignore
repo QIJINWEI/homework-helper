@@ -1,0 +1,59 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/
+
+# Taro
+.temp/
+dist/
+.rn_temp/
+
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+build/
+
+# Log
+logs/
+*.log
+
+# Env
+.env
+.env.local
+.env.*.local
+application-dev.yml
+application-prod.yml
+
+# Database
+*.db
+*.sqlite
+
+# Package
+*.tar.gz
+*.zip
+
+# Others
+.cache/
+coverage/
+.nyc_output/
