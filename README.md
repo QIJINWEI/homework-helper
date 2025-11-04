@@ -67,7 +67,7 @@ homework-helper/
 │   ├── ruoyi-common/           # 公共模块
 │   ├── ruoyi-framework/        # 框架核心
 │   └── sql/                    # 数据库脚本
-│
+│   
 └── docs/                        # 文档
     ├── api/                    # API文档
     ├── deploy/                 # 部署文档
