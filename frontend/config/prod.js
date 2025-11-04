@@ -1,9 +1,9 @@
 module.exports = {
   env: {
-    NODE_ENV: '"production"'
+    NODE_ENV: 'production'
   },
   defineConstants: {
-    API_BASE_URL: '"https://api.yourdomain.com"'
+    TARO_APP_API_BASE_URL: 'https://api.yourdomain.com'
   },
   mini: {},
   h5: {
